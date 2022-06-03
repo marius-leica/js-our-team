@@ -61,3 +61,20 @@ Milestone 2:
 stampare i dati all’interno di un contenitore nella pagina html in modo dinamico, creando per ciascun membro del team un elemento html che conterrà i suoi dati.
 */
 console.log("-------------------Milestone 2-------------------");
+
+const teamContainer = document.querySelector(".team-container");
+
+function teamCard(photo, name, role) {
+  teamContainer.innerHTML += `<div class'team-card'>
+    <div class='card-image'><img src=${photo}></img></div>
+    <div class='card-text'>
+      <h3>${name}</h3>
+      <p>${role}</p>
+    </div>
+  </div>`;
+}
+
+for (let i = 0; i < team.length; i++) {
+  const teamMember = team[i];
+  teamCard(teamMember.photo, teamMember.name, teamMember.role);
+}
