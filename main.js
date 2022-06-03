@@ -65,9 +65,9 @@ console.log("-------------------Milestone 2-------------------");
 const teamContainer = document.querySelector(".team-container");
 
 function teamCard(photo, name, role) {
-  teamContainer.innerHTML += `<div class'team-card'>
-    <div class='card-image'><img src=${photo}></img></div>
-    <div class='card-text'>
+  teamContainer.innerHTML += `<div class="team-card">
+    <div class="card-image"><img src=${photo}></img></div>
+    <div class="card-text">
       <h3>${name}</h3>
       <p>${role}</p>
     </div>
@@ -78,3 +78,9 @@ for (let i = 0; i < team.length; i++) {
   const teamMember = team[i];
   teamCard(teamMember.photo, teamMember.name, teamMember.role);
 }
+
+/*
+BONUS:
+stilizziamo la sezione realizzando le card di ciascun membro del team, come nel mockup allegato.
+*/
+console.log("-------------------BONUS-------------------");
